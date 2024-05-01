@@ -21,10 +21,12 @@
 }
 
 .logo {
-    font-size: 25px;
-    color: #031540;
+    font-size: 30px;
     text-decoration: none;
     font-weight: 700;
+
+    color: black;
+    -webkit-text-stroke: .5px white;
 }
 
 .navbar a {
@@ -149,4 +151,9 @@ footer {
 
 footer a {
     color: white;
+}
+
+.portfolio {
+    background: #031540;
+    height: 100vh;
 }
