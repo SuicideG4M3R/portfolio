@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "build": "webpack"
   },
   "dependencies": {
