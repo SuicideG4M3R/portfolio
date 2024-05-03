@@ -1,9 +1,10 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
     mode: "none",
-    entry: `./js/app.js`,
+    entry: `./src/app.js`,
     devtool: "inline-source-map",
     output: {
         filename: "out.js",
@@ -24,7 +25,7 @@ module.exports = {
             writeToDisk: true,
         },
         compress: true,
-        port: 3001,
+        port: 3002,
         historyApiFallback: true,
     },
     module: {
@@ -32,13 +33,24 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader",
+                use : {
+                    loader: "babel-loader",
+                },
             },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            }
         ],
+
     },
     plugins: [
         new webpack.ProvidePlugin({
             process: "process/browser",
+        }),
+        new HtmlWebpackPlugin({
+            template: "./public/index.html",
+            filename: "./index.html",
         }),
     ],
 };

@@ -1,0 +1,19 @@
+
+.portfolio {
+    background: #031540;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color: #fff;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 80%;
+}

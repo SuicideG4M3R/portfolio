@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import Home from "./home";
-import Portfolio from "./portfolio";
+import './style.css'
+import Home from "./screens/home/home";
+import Portfolio from "./screens/portfolio/portfolio";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
