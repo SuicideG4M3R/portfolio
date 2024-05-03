@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/header/header";
-import "./portfolio.css"
-const Portfolio = () => {
+import "./projects.css"
+const Projects = () => {
         return (
             <div>
                 <Header />
@@ -17,4 +17,4 @@ const Portfolio = () => {
 
 }
 
-export default Portfolio;
+export default Projects;
