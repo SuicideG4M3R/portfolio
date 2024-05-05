@@ -1,7 +1,13 @@
-import React from 'react';
-import './header.css'
+import React, { useState } from 'react';
+import './header.css';
 
 const Header = () => {
+    const [showContact, setShowContact] = useState(false);
+
+    const toggleContact = () => {
+        setShowContact(!showContact);
+    };
+
     return (
         <header className="header">
             <div className="logo">Robert Szczepański</div>
@@ -9,10 +15,17 @@ const Header = () => {
                 <a href="/" className="active">Home</a>
                 <a href="/about">About</a>
                 <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>
+                <a href="#" onClick={toggleContact}>Contact</a>
             </nav>
+            {showContact && (
+                <div className="contact-info">
+                    <p>My preferred method of contact:</p>
+                    <p>suicideg4m3r@gmail.com</p>
+                    <button onClick={toggleContact}>X</button>
+                </div>
+            )}
         </header>
-    )
-}
+    );
+};
 
 export default Header;
