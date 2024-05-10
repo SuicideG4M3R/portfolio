@@ -19,8 +19,8 @@ const Header = () => {
             </nav>
             {showContact && (
                 <div className="contact-info">
-                    <p>My preferred method of contact:</p>
-                    <p>suicideg4m3r@gmail.com</p>
+                    <p>My preferred method of contact: </p>
+                    <p>suicideg4m3r@gmail.com </p>
                     <button onClick={toggleContact}>X</button>
                 </div>
             )}

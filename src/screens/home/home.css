@@ -14,7 +14,7 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    right: 55%;
+    right: 58%;
     width: 500px;
     height: 500px;
     background: #031540;
@@ -52,7 +52,7 @@
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 15px;
 }
 

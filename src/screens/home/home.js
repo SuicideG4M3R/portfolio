@@ -16,8 +16,9 @@ const Home = ()=>{
                 <div className="home-content">
                     <h1>Hi, Im Robert!</h1>
                     <h3>Junior Python Developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolor ea harum inventore
-                        ipsa omnis quaerat quasi quisquam veniam vitae.</p>
+                    <p>A programming enthusiast captivated by the endless possibilities of the coding world. 
+                        With thirst for experience and knowledge, I tackle challenges with full dedication. 
+                        Ready for the next adventure in the realm of technology!</p>
                     <Socials/>
                 </div>
                 <footer>Site made with <a href="https://www.youtube.com/watch?v=jfV6IYW64JM">tutorial</a></footer>
