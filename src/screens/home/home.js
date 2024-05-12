@@ -14,7 +14,7 @@ const Home = ()=>{
                         alt=""/>
                 </div>
                 <div className="home-content">
-                    <h1>Hi, Im Robert!</h1>
+                    <h1>Hi, I'm Robert!</h1>
                     <h3>Junior Python Developer</h3>
                     <p>A programming enthusiast captivated by the endless possibilities of the coding world. 
                         With thirst for experience and knowledge, I tackle challenges with full dedication. 

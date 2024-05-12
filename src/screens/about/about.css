@@ -1,15 +1,35 @@
 
 .container-about {
+    margin: 120px 120px 70px 120px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 120px 50px 0 50px;
+    flex-direction: column;
+    column-gap: 10px;
 }
 
-.standard-container {
-    background-color: #f9f9f9;
+.container-about span {
+    background-color: #E9DCC9;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px 0;
 }
 
+.container-about label {
+    margin: 0 10px 0 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container-about span div, 
+.container-about span p {
+    display: inline-block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.container-about span p {
+    display: flex;
+}
