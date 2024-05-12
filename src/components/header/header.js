@@ -12,9 +12,9 @@ const Header = () => {
         <header className="header">
             <div className="logo">Robert Szczepański</div>
             <nav className="navbar">
-                <a href="/portfolio/" className="active">Home</a>
-                <a href="/portfolio/about">About</a>
-                <a href="/portfolio/projects">Projects</a>
+                <a href="/" className="active">Home</a>
+                <a href="/about">About</a>
+                <a href="/projects">Projects</a>
                 <a href="#" onClick={toggleContact}>Contact</a>
             </nav>
             {showContact && (
