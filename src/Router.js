@@ -7,21 +7,21 @@ import Projects from "./screens/projects/projects";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/portfolio/",
         element: <Home />,
     },
     {
-        path: "/about",
+        path: "/portfolio/about",
         element: <About />,
     },
     {
-        path: "/projects",
+        path: "/portfolio/projects",
         element: <Projects />,
     },
     {
         path: "*",
         element: <p>404 Error - Nothing here...</p>,
-    },
+    }
 ])
 
 export default router;
