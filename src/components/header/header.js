@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
@@ -12,10 +13,10 @@ const Header = () => {
         <header className="header">
             <div className="logo">Robert Szczepański</div>
             <nav className="navbar">
-                <a href="/portfolio/" className="active">Home</a>
-                <a href="/portfolio/about">About</a>
-                <a href="/portfolio/projects">Projects</a>
-                <a href="#" onClick={toggleContact}>Contact</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="#" onClick={toggleContact}>Contact</Link>
             </nav>
             {showContact && (
                 <div className="contact-info">
