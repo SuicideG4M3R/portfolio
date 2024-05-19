@@ -4,7 +4,7 @@ import './style.css'
 import Home from "./screens/home/home";
 import About from "./screens/about/about";
 import Projects from "./screens/projects/projects";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 const container = document.getElementById("app");
@@ -12,13 +12,13 @@ const root = createRoot(container);
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="projects" element={<Projects />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
