@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import Fun from './fun';
 
 const Header = () => {
-    const [showContact, setShowContact] = useState(false);
+    const [showContact, setShowContact] = React.useState(false);
 
     const toggleContact = () => {
         setShowContact(!showContact);
@@ -13,10 +14,11 @@ const Header = () => {
         <header className="header">
             <div className="logo">Robert Szczepański</div>
             <nav className="navbar">
-                <Link to="/">Home</Link>
+                <Link to="/" className='active'>Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="#" onClick={toggleContact}>Contact</Link>
+                <Fun />
             </nav>
             {showContact && (
                 <div className="contact-info">

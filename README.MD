@@ -2,6 +2,8 @@
 My name is Robert and if u are interested in looking up my portfolio.\
 I made for u this website :)
 
+Unfortunately projects does not scale well on mobile devices.
+
 #### MADE IN .. REACT
 * Uses ```react-router-dom``` for endpoints,.
 
