@@ -4,7 +4,9 @@ import './style.css'
 import Home from "./screens/home/home";
 import About from "./screens/about/about";
 import Projects from "./screens/projects/projects";
+import  Fun, { DefaultPage } from "./screens/fun/fun";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import CrazyDiv from "./screens/fun/projects/crazyDiv/crazyDiv";
 
 
 const container = document.getElementById("app");
@@ -17,6 +19,10 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="projects" element={<Projects />} />
+                <Route path="fun" element={<Fun />} >
+                    <Route path="" element={<DefaultPage />}/>
+                    <Route path="crazy-div" element={<CrazyDiv />}/>
+                </Route>
             </Routes>
         </HashRouter>
     );

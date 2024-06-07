@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import Fun from './fun';
+import FunButton from '../fun/funButton';
 
 const Header = () => {
     const [showContact, setShowContact] = React.useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
                 <Link to="/about">About</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="#" onClick={toggleContact}>Contact</Link>
-                <Fun />
+                <FunButton />
             </nav>
             {showContact && (
                 <div className="contact-info">

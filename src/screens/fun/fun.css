@@ -1,0 +1,29 @@
+.cont-fun,
+.cont-fun-pro {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 110px 50px 0 50px;
+    border-radius: 30px;
+}
+.cont-fun-pro{
+    margin: 30px 50px;
+    height: 70vh;
+}
+
+.cont-fun ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.cont-fun ul li {
+    margin: 15px;
+}
+.cont-fun ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
