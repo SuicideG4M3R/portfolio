@@ -13,13 +13,12 @@ export const DefaultPage = () => {
 
 const Fun = () => {
     return (
-        <div className="container-fun">
+        <div>
             <Header />
             <div className="cont-fun">
                 <ul>
                     <li><Link to="crazy-div">CrazyDiv</Link></li>
-                    <li><Link to="crazy-div">CrazyDiv</Link></li>
-                    <li><Link to="crazy-div">CrazyDiv</Link></li>
+                    <li><Link to="counter">Counter</Link></li>
                 </ul>    
             </div>
             <div className="cont-fun-pro">

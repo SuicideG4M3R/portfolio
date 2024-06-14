@@ -41,7 +41,7 @@ const About = () => {
                     <div>Hobby :</div>Mechanics, Programming, Sci-Fi movies, RPG, games, Chess, Cycling<br />
                     <div>Languages :</div>English - B1 | Polish - Native<br />
                     <div>Currently :</div>
-                    Working on this project, I'm planning add some "fun" endpoint where I'll make something more REACT advanced than plain txt and css like it is now<br />
+                    Working on this project, I'm planning add some "fun" endpoints where I'll make something more REACT advanced than plain txt and css like it is now<br />
                     <div></div>Also practicing use of Express along with typescript and prisma (Check it out! ---> <a href="https://github.com/SuicideG4M3R/ChangelogPK"><i class='bx bx-link'></i></a> )
                 </span>
             </div>

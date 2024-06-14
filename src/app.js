@@ -5,8 +5,9 @@ import Home from "./screens/home/home";
 import About from "./screens/about/about";
 import Projects from "./screens/projects/projects";
 import  Fun, { DefaultPage } from "./screens/fun/fun";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CrazyDiv from "./screens/fun/projects/crazyDiv/crazyDiv";
+import Counter from "./screens/fun/projects/counter/counter";
 
 
 const container = document.getElementById("app");
@@ -14,7 +15,7 @@ const root = createRoot(container);
 
 const App = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
@@ -22,9 +23,10 @@ const App = () => {
                 <Route path="fun" element={<Fun />} >
                     <Route path="" element={<DefaultPage />}/>
                     <Route path="crazy-div" element={<CrazyDiv />}/>
+                    <Route path="counter" element={<Counter/>}/>
                 </Route>
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     );
 };
 

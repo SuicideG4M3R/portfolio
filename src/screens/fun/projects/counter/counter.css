@@ -1,0 +1,14 @@
+.counter-comp h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.counter-comp button {
+    background-color: transparent;
+    margin: 90px 20px 0 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}

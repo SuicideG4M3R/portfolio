@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(3, 0fr);
 }
  
 .cont-pro ul li {
@@ -66,6 +66,7 @@
 }
 .game-stats,
 .charity-donations,
+.flask-crud,
 .portfolio,
 .no-image {
     width: 100%;
@@ -88,4 +89,10 @@
 
 .no-image {
     background-image: url("./img/img4.png");
+}
+
+.flask-crud {
+    background-image: url("./img/img6.png");
+    background-size: auto;
+    background-position-y: 120px;
 }
