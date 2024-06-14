@@ -5,7 +5,7 @@ import Home from "./screens/home/home";
 import About from "./screens/about/about";
 import Projects from "./screens/projects/projects";
 import  Fun, { DefaultPage } from "./screens/fun/fun";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import CrazyDiv from "./screens/fun/projects/crazyDiv/crazyDiv";
 import Counter from "./screens/fun/projects/counter/counter";
 
@@ -15,7 +15,7 @@ const root = createRoot(container);
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
@@ -26,7 +26,7 @@ const App = () => {
                     <Route path="counter" element={<Counter/>}/>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
