@@ -8,8 +8,6 @@ const Landing = ({
   aboutText = 'A programming enthusiast captivated by the endless possibilities of the coding world. With thirst for experience and knowledge, I tackle challenges with full dedication. Ready for the next adventure in the realm of technology!',
   action1 = 'Check Projects',
   action2 = 'About me',
-  image1Alt = 'profile-picture',
-  image1Src = '../../../public/assets/img/profile_rotated.jpg'
 }) => {
   return (
     <div className="thq-section-padding">
@@ -31,11 +29,7 @@ const Landing = ({
             </div>
           </div>
           <div className="landing-container1">
-            <img
-              alt={image1Alt}
-              src={image1Src}
-              className="landing-image1"
-            />
+            <div className="landing-image1 profile-photo"/>
           </div>
         </div>
       </div>

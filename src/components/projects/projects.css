@@ -8,14 +8,17 @@
   background-size: cover;
   background-image: url('../../../public/assets/img/img7.jpg');
 }
+
 .projects-max-width {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .projects-container {
   width: 100%;
 }
+
 .projects-card {
   color: var(--dl-color-theme-neutral-light);
   width: 100%;
@@ -32,23 +35,13 @@
   justify-content: flex-start;
   background-color: var(--dl-color-theme-neutral-light);
 }
-.projects-image {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  padding: 0px;
-  align-self: center;
-  margin-top: var(--dl-space-space-halfunit);
-  object-fit: cover;
-  border-color: var(--dl-color-theme-accent2);
-  border-style: solid;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-buttonradius);
-}
+
+
 .projects-name {
   fill: var(--dl-color-theme-accent2);
   color: var(--dl-color-theme-accent2);
 }
+
 .projects-text {
   fill: var(--dl-color-theme-neutral-dark);
   color: var(--dl-color-theme-neutral-dark);
@@ -63,11 +56,48 @@
   text-transform: capitalize;
 }
 
+.projects-image {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  align-self: center;
+  margin-top: var(--dl-space-space-halfunit);
+  object-fit: cover;
+  border-color: var(--dl-color-theme-accent2);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: var(--dl-radius-radius-buttonradius);
+  background-size: cover;
+  background-position: center;
+}
+
+.GameStats {
+  background-image: url('../../../public/assets/img/img2.jpg');
+}
+
+.CharityDonations {
+  background-image: url('../../../public/assets/img/img1.jpg');
+}
+
+.WebScrapperPY {
+  background-image: url('../../../public/assets/img/img4.png');
+}
+
+.Portfolio {
+  background-image: url('../../../public/assets/img/img5.png');
+}
+
+.FlaskCRUD {
+  background-image: url('../../../public/assets/img/img6.png');
+}
+
 @media(max-width: 991px) {
   .projects-max-width {
     flex-direction: column;
   }
 }
+
 @media(max-width: 767px) {
   .projects-card {
     width: 100%;

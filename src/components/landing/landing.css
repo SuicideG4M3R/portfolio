@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .landing-column {
   gap: 24px;
   flex: 1;
@@ -11,6 +12,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
 .landing-content {
   gap: 24px;
   display: flex;
@@ -18,17 +20,21 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
 .landing-actions {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
 }
+
 .landing-button {
   text-decoration: none;
 }
+
 .landing-button1 {
   text-decoration: none;
 }
+
 .landing-container1 {
   flex: 1;
   display: flex;
@@ -37,10 +43,11 @@
   padding-top: 35%;
   justify-content: flex-start;
 }
+
 .landing-image1 {
   left: 0px;
   right: 0px;
-  width: auto;
+  width: 70%;
   bottom: 0px;
   height: 100%;
   margin: auto;
@@ -50,44 +57,58 @@
   border-color: var(--dl-color-theme-accent2);
   border-width: 3px;
   border-radius: var(--dl-radius-radius-round);
+
+}
+
+.profile-photo {
   background-image: url('../../../public/assets/img/profile_rotated.jpg');
   background-size: cover;
 }
+
 @media(max-width: 991px) {
   .landing-container {
     flex-direction: column;
   }
+
   .landing-container1 {
-    width: 100%;
+    width: 80%;
     padding-top: 56.25%;
   }
 }
+
 @media(max-width: 767px) {
   .landing-heading1 {
     text-align: center;
   }
+
   .landing-content1 {
     text-align: center;
   }
+
   .landing-content11 {
     text-align: center;
   }
+
   .landing-actions {
     width: 100%;
     justify-content: center;
   }
+
   .landing-image1 {
-    width: auto;
+    width: 70%;
     height: 100%;
   }
 }
+
 @media(max-width: 479px) {
   .landing-actions {
     flex-direction: column;
   }
+
   .landing-button {
     width: 100%;
   }
+
   .landing-button1 {
     width: 100%;
   }
