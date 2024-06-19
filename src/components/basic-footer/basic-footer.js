@@ -1,7 +1,7 @@
 import React from 'react'
 import './basic-footer.css'
 
-const BasicFooter = (props) => {
+const BasicFooter = () => {
 
   const handleClick = (url) => {
     window.open(url, '_blank');
@@ -12,19 +12,19 @@ const BasicFooter = (props) => {
       <div className="basic-footer-max-width thq-section-max-width">
         <div className="basic-footer-content">
           <div className="basic-footer-social-links">
-            <svg onClick={() => handleClick(props.facebook)} style={{cursor: 'pointer'}}
+            <svg onClick={() => handleClick('https://www.facebook.com/robert.szczepanski.1217')} style={{cursor: 'pointer'}}
               viewBox="0 0 877.7142857142857 1024"
               className="thq-icon-small"
             >
               <path d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"></path>
             </svg>
-            <svg onClick={() => handleClick(props.linkedin)} style={{cursor: 'pointer'}}
+            <svg onClick={() => handleClick('https://www.linkedin.com/in/robertszczepanskisuicideg4m3r/')} style={{cursor: 'pointer'}}
               viewBox="0 0 877.7142857142857 1024"
               className="thq-icon-small"
             >
               <path d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"></path>
             </svg>
-            <svg onClick={() => handleClick(props.github)} style={{cursor: 'pointer'}}
+            <svg onClick={() => handleClick('https://github.com/SuicideG4M3R')} style={{cursor: 'pointer'}}
               viewBox="0 0 1024 1024"
               className="thq-icon-small"
             >
@@ -35,12 +35,6 @@ const BasicFooter = (props) => {
       </div>
     </footer>
   )
-}
-
-BasicFooter.defaultProps = {
-  github: 'https://github.com/SuicideG4M3R',
-  linkedin: 'https://www.linkedin.com/in/robertszczepanskisuicideg4m3r/',
-  facebook: 'https://www.facebook.com/robert.szczepanski.1217',
 }
 
 export default BasicFooter

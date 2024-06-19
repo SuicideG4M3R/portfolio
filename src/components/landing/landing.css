@@ -50,6 +50,8 @@
   border-color: var(--dl-color-theme-accent2);
   border-width: 3px;
   border-radius: var(--dl-radius-radius-round);
+  background-image: url('../../../public/assets/img/profile_rotated.jpg');
+  background-size: cover;
 }
 @media(max-width: 991px) {
   .landing-container {

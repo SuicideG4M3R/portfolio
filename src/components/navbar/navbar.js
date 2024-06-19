@@ -4,7 +4,13 @@ import FunButton from './funButton.js';
 import { darkThemeStyles, lightThemeStyles } from './themes.js'
 import './navbar.css'
 
-const Navbar = (props) => {
+const Navbar = ({
+  name  = 'Robert Szczepański',
+  link1 = 'Home',
+  link2 = 'About',
+  link3 = 'Projects',
+  link4 = 'Contact',
+}) => {
   const [isVisible, setisVisible] = React.useState(false);
   const [theme, setTheme] = React.useState('dark'); // standart theme dark | light
   const [showContact, setShowContact] = React.useState(false);
@@ -24,10 +30,10 @@ const Navbar = (props) => {
 
 
   return (
-    <header className={`navbar-container ${props.rootClassName}`}>
+    <header className='navbar-container'>
       <style id='custom-style'></style>
       <header data-thq="thq-navbar" className="navbar-navbar-interactive">
-        <span className="navbar-text">{props.text}</span>
+        <span className="navbar-text">{name}</span>
         <div data-thq="thq-navbar-nav" className="navbar-desktop-menu">
           <nav className="navbar-links">
             <svg viewBox="0 0 1024 1024" onClick={toggleTheme} className="navbar-icon2">
@@ -36,10 +42,10 @@ const Navbar = (props) => {
                 className=""
               ></path>
             </svg>
-            <Link to="/" className="navbar-link1 thq-body-small thq-link">{props.link1}</Link>
-            <Link to="/about" className="navbar-link2 thq-body-small thq-link">{props.link2}</Link>
-            <Link to="/projects" className="navbar-link3 thq-body-small thq-link">{props.link3}</Link>
-            {/* <Link to="#" className="thq-body-small thq-link">{props.link4}</Link> */}
+            <Link to="/" className="navbar-link1 thq-body-small thq-link">{link1}</Link>
+            <Link to="/about" className="navbar-link2 thq-body-small thq-link">{link2}</Link>
+            <Link to="/projects" className="navbar-link3 thq-body-small thq-link">{link3}</Link>
+            {/* <Link to="#" className="thq-body-small thq-link">{link4}</Link> */}
             <FunButton />
           </nav>
         </div>
@@ -70,10 +76,10 @@ const Navbar = (props) => {
               </div>
             </div>
             <nav className="navbar-links1">
-              <Link to="/" className="navbar-link11 thq-body-small thq-link">{props.link11}</Link>
-              <Link to="/about" className="navbar-link21 thq-body-small thq-link">{props.link21}</Link>
-              <Link to="/projects" className="navbar-link31 thq-body-small thq-link">{props.link31}</Link>
-              {/* <Link to="#" className="thq-body-small thq-link">{props.link41}</Link> */}
+              <Link to="/" className="navbar-link11 thq-body-small thq-link">{link1}</Link>
+              <Link to="/about" className="navbar-link21 thq-body-small thq-link">{link2}</Link>
+              <Link to="/projects" className="navbar-link31 thq-body-small thq-link">{link3}</Link>
+              {/* <Link to="#" className="thq-body-small thq-link">{link4}</Link> */}
               <FunButton />
             </nav>
           </div>
@@ -81,21 +87,6 @@ const Navbar = (props) => {
       </header>
     </header>
   )
-}
-
-Navbar.defaultProps = {
-  link11: 'Home',
-  link51: 'Fun',
-  rootClassName: '',
-  link3: 'Projects',
-  link2: 'About',
-  link5: 'Fun',
-  link31: 'Projects',
-  link21: 'About',
-  link1: 'Home',
-  text: 'Robert Szczepański',
-  link4: 'Contact',
-  link41: 'Contact',
 }
 
 export default Navbar

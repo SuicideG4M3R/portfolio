@@ -1,57 +1,17 @@
 import React, { useState } from 'react'
 import './about.css'
 
-const About = (props) => {
+const About = () => {
   const [isTermsVisible, setIsTermsVisible] = useState(true)
   const [isRefundVisible, setIsRefundVisible] = useState(false)
   return (
     <div className="about-container thq-section-padding">
       <div className="about-max-width thq-section-max-width thq-flex-column">
         <div className="about-container1 thq-flex-row thq-section-max-width">
-          {isTermsVisible && (
-            <button
-              onClick={() => {
-                setIsTermsVisible(true)
-                setIsRefundVisible(false)
-              }}
-              className="thq-button-filled"
-            >
-              {props.button}
-            </button>
-          )}
-          {!isTermsVisible && (
-            <button
-              onClick={() => {
-                setIsTermsVisible(true)
-                setIsRefundVisible(false)
-              }}
-              className="thq-button-outline"
-            >
-              {props.button}
-            </button>
-          )}
-          {!isRefundVisible && (
-            <button
-              onClick={() => {
-                setIsTermsVisible(false)
-                setIsRefundVisible(true)
-              }}
-              className="thq-button-outline"
-            >
-              {props.button2}
-            </button>
-          )}
-          {isRefundVisible && (
-            <button
-              onClick={() => {
-                setIsTermsVisible(false)
-                setIsRefundVisible(true)
-              }}
-              className="thq-button-filled"
-            >
-              {props.button2}
-            </button>
-          )}
+          {isTermsVisible && (<button onClick={() => {setIsTermsVisible(true);setIsRefundVisible(false) }} className="thq-button-filled">Skills</button>)}
+          {!isTermsVisible && (<button onClick={() => {setIsTermsVisible(true);setIsRefundVisible(false) }} className="thq-button-outline">Skills</button>)}
+          {!isRefundVisible && (<button onClick={() => {setIsTermsVisible(false);setIsRefundVisible(true) }} className="thq-button-outline">About me</button>)}
+          {isRefundVisible && (<button onClick={() => {setIsTermsVisible(false);setIsRefundVisible(true) }} className="thq-button-filled">About me</button>)}
         </div>
         <div className="about-container2 thq-flex-column">
           {isTermsVisible && (
@@ -209,8 +169,4 @@ const About = (props) => {
   )
 }
 
-About.defaultProps = {
-  button: 'Skills',
-  button2: 'About me',
-}
 export default About
