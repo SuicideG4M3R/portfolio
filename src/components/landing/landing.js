@@ -43,7 +43,7 @@ Landing.defaultProps = {
   action1: 'Check Projects',
   action2: 'About me',
   image1Alt: 'profile-picture',
-  image1Src: '../../../public/assets/img/profile_rotated2-200w.jpg',
+  image1Src: '../../../public/assets/img/profile_rotated.jpg',
 }
 
 export default Landing

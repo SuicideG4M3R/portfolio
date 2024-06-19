@@ -27,7 +27,7 @@ const ProjectsFun = (props) => {
 
 ProjectsFun.defaultProps = {
   content6: 'Box randomly jumping and running away from cursor',
-  heading6: 'CrazyDiv',
+  heading6: 'CrazyDiv// WORK IN PROGRESS',
   rootClassName: '',
 }
 export default ProjectsFun
