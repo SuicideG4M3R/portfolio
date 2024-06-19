@@ -1,11 +1,16 @@
 import React from 'react'
-import FunProjectTemplate from '../../components/fun-project-template/fun-project-template.js'
 import './fun-project-page.css'
 
 const FunProjectPage = () => {
   return (
     <div className="fun-project-page-container">
-      <FunProjectTemplate />
+      <div className="fun-project-template-header5">
+      <div className="fun-project-template-container">
+        <div className="fun-project-template-image">
+          <h1>HELLO</h1>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
