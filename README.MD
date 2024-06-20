@@ -2,22 +2,18 @@
 My name is Robert and if u are interested in looking up my portfolio.\
 I made for u this website :)
 
-Unfortunately projects does not scale well on mobile devices.
-
+Mobile Devices Scalable
+Use This link to see my [portfolio](https://suicideg4m3r.github.io/portfolio/)
 #### MADE IN .. REACT
 * Uses ```react-router-dom``` for endpoints,.
 
-* Home page was created with help of tutorial,\
-rest of the views were I made myself (except icons)
+* Designed in [TeleportHQ](https://teleporthq.io)
 
 #### ABOUT PROJECT
-Project is in development stage,\
-there's a lot stuf that I would love to add/improve,\
-but for now I'm new to React and have other matters to attend,\
-it is my first project deployed to the github pages.
+Project was re-made, you can check old one on branch "[oldPortfolio](https://github.com/SuicideG4M3R/portfolio/tree/oldPortfolio)"
 
 I'm sure that there's a lot of misteps or things that could be done better\
-I would be happy if someone could pinpoint them so later, I'll learn and know
+I would be happy if someone could pinpoint them so later, I'll learn and know :)
 
 Thank you for your time :)\
 Have a nice day or !day 
