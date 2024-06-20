@@ -1,0 +1,50 @@
+.counter-comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.counter-comp h1 {
+    font-size: 100px;
+    color: var(--dl-color-theme-secondary2);
+    margin: 30px 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.counter-comp button {
+    color: var(--dl-color-theme-neutral-dark);
+    background-color: var(--dl-color-theme-neutral-light);
+    margin: 10px 20px;
+    border: 3px solid var(--dl-color-theme-primary2);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .counter-comp h1 {
+        font-size: 80px;
+    }
+
+    .counter-comp button {
+        margin: 10px 10px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .counter-comp h1 {
+        font-size: 60px;
+    }
+
+    .counter-comp button {
+        margin: 5px 5px;
+        font-size: 20px;
+        padding: 10px;
+    }
+}

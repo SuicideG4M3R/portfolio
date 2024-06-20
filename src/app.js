@@ -8,8 +8,9 @@ import AboutPage from './screens/about-page/about-page.js'
 import ProjectsPage from './screens/projects-page/projects-page.js'
 import FunPage from './screens/fun-page/fun-page.js'
 
-import FunProjectPage from './screens/fun-project-page/fun-project-page.js' // heres project page
-import NotFound from './screens/not-found/not-found.js' // not found
+import NotFound from './screens/not-found/not-found.js'
+import CrazyDiv from "./screens/Fun-projects/projects/crazyDiv/crazyDiv.js";
+import Counter from "./screens/Fun-projects/projects/counter/counter.js";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
@@ -22,9 +23,10 @@ const App = () => {
                 <Route path="/" element={<LandingPage/>} />
                 <Route path="about" element={<AboutPage/>} />
                 <Route path="projects" element={<ProjectsPage/>} />
-                <Route path="fun" element={<FunPage/>}>
-                    <Route path="crazy-div" element={<FunProjectPage/>} />
-                </Route>
+                <Route path="fun" element={<FunPage/>}/>
+                <Route path="fun/crazy-div" element={<CrazyDiv/>} />
+                <Route path="fun/counter" element={<Counter/>} />
+                <Route path="*" element={<NotFound/>} />
             </Routes>
         </HashRouter>
     );
