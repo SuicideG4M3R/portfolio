@@ -32,6 +32,14 @@ const AboutPage = () => {
                         <p className="thq-body-small">Python, JavaScript</p>
                       </li>
                     </ul>
+                    <ul className="about-ul1 thq-flex-column">
+                      <li className="list-item">
+                        <h3 className="about-heading8 thq-heading-3">
+                          Frameworks:
+                        </h3>
+                        <p className="thq-body-small">Flask, Django, React</p>
+                      </li>
+                    </ul>
                     <ul className="about-ul2 thq-flex-column">
                       <li className="list-item">
                         <h3 className="about-heading81 thq-heading-3">IDE:</h3>
@@ -66,6 +74,24 @@ const AboutPage = () => {
                         <p className="thq-body-small">
                           HTML, CSS, PostgreSQL, SQL, GitHub, REST API, Agile,
                           Docker, Unit Tests
+                        </p>
+                      </li>
+                    </ul>
+                    <ul className="about-ul5 thq-flex-column">
+                      <li className="list-item">
+                        <h3 className="about-heading84 thq-heading-3">
+                          Certificates:
+                        </h3>
+                        <p className="thq-body-small">
+                          <span>Coders Lab - Python Developer</span>
+                          <br></br>
+                          <span>
+                            Coders Lab - JavaScript Specialist: React + Redux
+                          </span>
+                          <br></br>
+                          <span>
+                            SCRUMstudy - Scrum Developer Certificated (SDC)
+                          </span>
                         </p>
                       </li>
                     </ul>
